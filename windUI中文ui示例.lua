@@ -18,7 +18,7 @@ end
 local Window = WindUI:CreateWindow({
     Title = "Shenmihub",
     Icon = "palette",
-    Author = "上面大名称下面",
+    Author = "by:神秘",
     Folder = "文件夹路径",
     Size = UDim2.fromOffset(700, 500),
     Theme = "Dark",
@@ -47,7 +47,7 @@ local Tab = Window:Tab({
 })
 
 Tab:Paragraph({
-    Title = "复制",
+    Title = "QQ群",
     Image = "nil",
     ImageSize = 20,
     Color = "Grey",
@@ -57,7 +57,7 @@ Tab:Paragraph({
             Icon = "copy",
             Variant = "Tertiary",
             Callback = function()
-                setclipboard("填写需要复制的")
+                setclipboard("943953581")
                 WindUI:Notify({
                     Title = "已复制！",
                     Content = "已复制到剪贴板",
@@ -84,7 +84,7 @@ local Button = Tab:Button({
     Title = "飞行",
     Locked = false,
     Callback = function()
-        print("clicked")
+        print("loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()")
     end
 })
 
