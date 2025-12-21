@@ -541,4 +541,22 @@ local Button = Tab:Button({
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/wefwef127382/inkgames.github.io/refs/heads/main/ringta.lua"))()
     end
+})                                                                                                 
+
+Window:SelectTab(2) -- Number of Tab
+
+local Tab = Tabs.Main:Tab({
+    Title = "doors",
+    Icon = "layout-grid",
+    Locked = false,
+})
+
+
+local Button = Tab:Button({
+    Title = "Doors圣诞Figure自动秒通关",
+    Desc = "",
+    Locked = false,
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/XOTRXONY/EasyScript/main/DoorsAutoWin"))()
+    end
 })
