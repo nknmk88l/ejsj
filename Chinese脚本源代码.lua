@@ -534,13 +534,11 @@ local Tab = Tabs.Settings:Tab({
 })
 
 
-local Paragraph = Tab:Paragraph({
+local Button = Tab:Button({
     Title = "墨水无卡密",
     Desc = "",
     Locked = false,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/wefwef127382/inkgames.github.io/refs/heads/main/ringta.lua"))()
-                end     
-        })
-
-Window:SelectTab(2) -- Number of Tab
+    end
+})
