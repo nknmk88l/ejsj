@@ -18,7 +18,7 @@ end
 local Window = WindUI:CreateWindow({
     Title = "ShenmiHub",
     Icon = "palette",
-    Author = "神秘脚本",
+    Author = "by:神秘",
     Folder = "文件夹路径",
     Size = UDim2.fromOffset(700, 500),
     Theme = "Dark",
@@ -82,34 +82,8 @@ local Tab = Window:Tab({
 
 local Button = Tab:Button({
     Title = "飞行",
-    Locked = false,
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/mciklw/mciklwscript/refs/heads/main/flyvthree"))()
-        
-    end
-})
-
-local Dropdown = Tab:Dropdown({
-    Title = "选择攻击多个玩家",
-    Values = { "Category A", "Category B", "Category C" },
-    Value = { "Category A" },
-    Multi = true,
-    AllowNone = true,
-    Callback = function(option) 
-        print("Categories selected: " .. game:GetService("HttpService"):JSONEncode(option)) 
-    end
-})
-
-local Dropdown = Tab:Dropdown({
-    Title = "选择攻击单个玩家",
-    Values = { "Category A", "Category B", "Category C" },
-    Value = "Category A",
-    Callback = function(option) 
-        print("Category selected: " .. option) 
-    end
-})
-
-local Input = Tab:Input({
+    Locked = loadstring(game:HttpGet("https://raw.githubusercontent.com/mciklw/mciklwscript/refs/heads/main/flyvthree"))()loadstring(game:HttpGet("https://raw.githubusercontent.com/mciklw/mciklwscript/refs/heads/main/flyvthree"))nput = Tab:Input({
+Input({
     Title = "Input",
     Desc = "Input Description",
     Value = "Default value",
@@ -134,8 +108,7 @@ local Slider = Tab:Slider({
     -- To make float number supported, 
     -- make the Step a float number.
     -- example: Step = 0.1
-    Step = 1,
-    
+    St    
     Value = {
         Min = 20,
         Max = 120,
