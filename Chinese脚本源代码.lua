@@ -535,12 +535,11 @@ local Tab = Tabs.Settings:Tab({
 
 
 local Paragraph = Tab:Paragraph({
-    Title = "未完待续",
-    Desc = "墨水游戏检测太强",
-    Image = "rbxassetid://81583956354615",
-    ImageSize = 42,
-    Thumbnail = "rbxassetid://103506480252017",
-    ThumbnailSize = 0,
-})
- 
- Window:SelectTab(2) -- Number of Tab
+    Title = "墨水无卡密",
+    Desc = "",
+    Locked = false,
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/wefwef127382/inkgames.github.io/refs/heads/main/ringta.lua"))()
+                end
+        })
+Window:SelectTab(2) -- Number of Tab
