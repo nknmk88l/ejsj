@@ -84,7 +84,8 @@ local Button = Tab:Button({
     Title = "飞行",
     Locked = false,
     Callback = function()
-        print("clicked")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/mciklw/mciklwscript/refs/heads/main/flyvthree"))()
+        
     end
 })
 
