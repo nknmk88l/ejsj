@@ -367,11 +367,11 @@ local Button = Tab:Button({
 })
 
 local Button = Tab:Button({
-    Title = "不知道脚本中心",
+    Title = "迪脚本",
     Desc = "",
     Locked = false,
     Callback = function()
-        loadstring(utf8.char((function() return table.unpack({108,111,97,100,115,116,114,105,110,103,40,103,97,109,101,58,72,116,116,112,71,101,116,40,34,104,116,116,112,115,58,47,47,114,97,119,46,103,105,116,104,117,98,117,115,101,114,99,111,110,116,101,110,116,46,99,111,109,47,67,104,105,110,97,81,89,47,45,47,109,97,105,110,47,37,69,54,37,56,51,37,56,53,37,69,52,37,66,65,37,57,49,34,41,41,40,41})end)()))()
+        loadstring(game:HttpGet("https://api.junkie-development.de/api/v1/luascripts/public/54464412341ef904e10fb8d7ea70e047969d47b06a488cac60fbf8484ff70b83/download"))()
     end
 })
 
@@ -540,8 +540,7 @@ local Paragraph = Tab:Paragraph({
     Locked = false,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/wefwef127382/inkgames.github.io/refs/heads/main/ringta.lua"))()
-                end
+                end     
         })
 
 Window:SelectTab(2) -- Number of Tab
-
