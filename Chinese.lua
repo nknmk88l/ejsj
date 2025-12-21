@@ -545,7 +545,7 @@ local Button = Tab:Button({
 
 Window:SelectTab(2) -- Number of Tab
 
-local Tab = Tabs.Main:Tab({
+local Tab = Tabs.Settings:Tab({
     Title = "doors",
     Icon = "layout-grid",
     Locked = false,
