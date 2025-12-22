@@ -560,3 +560,21 @@ local Button = Tab:Button({
         loadstring(game:HttpGet("https://raw.githubusercontent.com/XOTRXONY/EasyScript/main/DoorsAutoWin"))()
     end
 })
+
+local Button = Tab:Button({
+    Title = "xk",
+    Desc = "",
+    Locked = false,
+    Callback = function()
+        loadstring(game:HttpGet(('https://github.com/devslopo/DVES/raw/main/XK%20Hub')))()
+    end
+})
+
+local Button = Tab:Button({
+    Title = "xa",
+    Desc = "",
+    Locked = false,
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.gitcode.com/Xingtaiduan/Scripts/raw/main/Loader.lua"))()
+    end
+})
