@@ -50,7 +50,7 @@ local Window = WindUI:CreateWindow({
 })
             
 Window:Tag({
-    Title = "v1.4",
+    Title = "测试版",
     Color = Color3.fromHex("#30ff6a")
 })
 
@@ -98,6 +98,15 @@ local Paragraph = Tab:Paragraph({
 
 local Paragraph = Tab:Paragraph({
     Title = "狂欢万圣节",
+    Desc = "",
+    Image = "rbxassetid://81583956354615",
+    ImageSize = 42,
+    Thumbnail = "rbxassetid://103506480252017",
+    ThumbnailSize = 0,
+})
+
+local Paragraph = Tab:Paragraph({
+    Title = "黑白脚本卡密:HB_789113",
     Desc = "",
     Image = "rbxassetid://81583956354615",
     ImageSize = 42,
@@ -384,7 +393,14 @@ local Button = Tab:Button({
     end
 })
 
-Window:SelectTab(2) -- Number of Tab
+local Button = Tab:Button({
+    Title = "黑白脚本卡密在公告",
+    Desc = "",
+    Locked = false,
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/tfcygvunbind/Apple/main/黑白脚本加载器'))()
+    end
+})
 
 local Tab = Tabs.Main:Tab({
     Title = "客户端",
