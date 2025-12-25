@@ -594,3 +594,20 @@ local Button = Tab:Button({
         loadstring(game:HttpGet("https://raw.gitcode.com/Xingtaiduan/Scripts/raw/main/Loader.lua"))()
     end
 })
+
+
+local Tab = Tabs.Settings:Tab({
+    Title = "亡命",
+    Icon = "layout-grid",
+    Locked = false,
+})
+
+
+local Button = Tab:Button({
+    Title = "linni",
+    Desc = "",
+    Locked = false,
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ShenJiaoBen/ScriptLoader/refs/heads/main/Linni_FreeLoader.lua"))()
+    end
+})
