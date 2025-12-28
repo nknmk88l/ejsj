@@ -50,7 +50,12 @@ local Window = WindUI:CreateWindow({
 })
             
 Window:Tag({
-    Title = "测试版",
+    Title = "正式版",
+    Color = Color3.fromHex("#30ff6a")
+})
+
+Window:Tag({
+    Title = "v0.1",
     Color = Color3.fromHex("#30ff6a")
 })
 
@@ -88,7 +93,7 @@ local Paragraph = Tab:Paragraph({
 })
 
 local Paragraph = Tab:Paragraph({
-    Title = "最近懒得更新",
+    Title = "三天一更",
     Desc = "QQ群2群1074218782 ",
     Image = "rbxassetid://81583956354615",
     ImageSize = 42,
@@ -97,7 +102,7 @@ local Paragraph = Tab:Paragraph({
 })
 
 local Paragraph = Tab:Paragraph({
-    Title = "狂欢万圣节",
+    Title = "元旦快乐",
     Desc = "",
     Image = "rbxassetid://81583956354615",
     ImageSize = 42,
@@ -170,11 +175,11 @@ local Slider = Tab:Slider({
 })
 
 local Button = Tab:Button({
-    Title = "飞行v3",
+    Title = "shenmi飞行",
     Desc = "",
     Locked = false,
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/mciklw/mciklwscript/refs/heads/main/flyvthree"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/nknmk88l/-78-/refs/heads/main/飞行源码.lua"))()
     end
 })
 
