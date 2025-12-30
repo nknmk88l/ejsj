@@ -34,7 +34,7 @@ local Window = WindUI:CreateWindow({
         
         -- ↓ Optional. You can remove it.
         Thumbnail = {
-            Image = "rbxassetid://114457723265156",
+            Image = "rbxassetid://82383133704483",
             Title = "",
         },
         
@@ -158,7 +158,7 @@ local Slider = Tab:Slider({
 })
 
 local Button = Tab:Button({
-    Title = "shenmi飞行",
+    Title = "Sfi飞行",
     Desc = "",
     Locked = false,
     Callback = function()
